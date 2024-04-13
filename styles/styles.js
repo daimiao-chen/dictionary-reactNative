@@ -81,4 +81,38 @@ export const styles = StyleSheet.create({
     color: '#7F8C8D',
     marginBottom: 10,
   },
+  center: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalView: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 8,
+    padding: 16,
+    margin: 16,
+    width: '80%',
+    height: '80%',
+  },
+  redText: {
+    color: '#FF0000',
+    textAlign: 'right',
+  },
+  item: {
+    margin: 4,
+    padding: 16,
+    backgroundColor: '#FFFFFF',
+  },
+  word: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  wordGreen: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#00FF00',
+  },
+  phonetic: {
+    fontSize: 18,
+  },
 });
