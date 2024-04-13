@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView, StyleSheet, Pressable, Modal, Alert } from 'react-native';
-import { styles, localStyles } from './../styles/styles';
+import { styles, localStyles } from '../../../styles/styles';
 import Word from '../word/word';
 
 const Favorites = (props) => {
