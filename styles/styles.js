@@ -1,6 +1,30 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
+  switchView: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  example: {
+    fontSize: 14,
+    fontStyle: 'italic',
+    margin: 4,
+  },
+  part: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    margin: 4,
+  },
+  definition: {
+    fontSize: 18,
+  },
+  definitionItem: {
+    marginTop: 15,
+  },
+  cardTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
   container: {
     flex: 1,
     backgroundColor: '#F8F8F8', 
