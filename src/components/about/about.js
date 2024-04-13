@@ -2,6 +2,15 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { styles } from '../../../styles/styles'; 
 
+const StudentView = ({name, number}) => {
+  return (
+    <View>
+      <Text style={styles.studentText}>Student: {name}</Text>
+      <Text style={styles.studentNumber}>Student number: {number}</Text>
+    </View>
+  );
+}
+
 const AboutScreen = (prop) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -39,14 +48,11 @@ const AboutScreen = (prop) => {
       <Text style={styles.leftTitle}>The Final Project.</Text>
       <Text style={styles.leftTitle}>The Dictionary App.</Text>
       <View style={styles.divider}></View>
-      <Text style={styles.studentText}>Student: Oleg Baryshev</Text>
-      <Text style={styles.studentNumber}>Student number: 1138630</Text>
+      <StudentView name="Oleg Baryshev" number="1138630" />
       <View style={styles.divider}></View>
-      <Text style={styles.studentText}>Student: Daimiao Chen</Text>
-      <Text style={styles.studentNumber}>Student number: 1172321</Text>
+      <StudentView name="Daimiao Chen" number="1172321" />
       <View style={styles.divider}></View>
-      <Text style={styles.studentText}>Student: Nonye Asogwa</Text>
-      <Text style={styles.studentNumber}>Student number: 1176041</Text>
+      <StudentView name="Nonye Asogwa" number="1176041" />
       <View style={styles.divider}></View>
     </View>
   );
